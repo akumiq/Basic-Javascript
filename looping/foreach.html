@@ -1,0 +1,43 @@
+<!-- contoh menggunakan for dengan operator in -->
+<script>
+    var languages = ["Javascript", "HTML", "CSS", "Typescript"];
+
+    for(i = 0; i < languages.length; i++){
+        document.write(i+". "+ languages[i] + "<br/>");
+    }
+</script>
+
+<!-- cara itu bisa lebih simpel jika pakai in -->
+
+<script>
+    var languages = ["Javascript", "HTML", "CSS", "Typescript"];
+
+    for(i in languages){
+        document.write(i+". "+ languages[i] + "<br/>");
+    }
+</script>
+
+<!-- contoh cara membuat perulangan foreach ialah dengan menggunakan method forEach() dari array -->
+
+<script>
+    // kita punya array seperti berikut
+   var days = ["Senin", "Selasa", "Rabu", "Kamis", "Jum'at", "Sabtu", "Minggu"];
+
+    // Kemudian kita tampilkan semua hari
+    // dengan menggunakan method foreach
+    days.forEach(function(day){
+       document.write("<p>" + day + "</p>");
+    });
+</script>
+
+<!-- Method forEach() memiliki parameter berupa fungsi callback. Sebenarnya kita juga bisa menggunakan arrow function seperti ini: -->
+<script>
+    // kita punya array seperti berikut
+    var days = ["Senin", "Selasa", "Rabu", "Kamis", "Jum'at", "Sabtu", "Minggu"];
+
+    // Kemudian kita tampilkan semua hari
+    // dengan menggunakan method foreach
+    days.forEach((day) => {
+       document.write("<p>" + day + "</p>");
+    });
+</script>
